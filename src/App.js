@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import SearchBar from './components/SearchBar';
 import InternshipCard from './components/InternshipCard';
 import './styles.css';
-const backendUrl = process.env.BACKEND_URL || "http://localhost:5000"; ;
+const backendUrl = process.env.BACKEND_URL;
 
 function App() {
   const [internships, setInternships] = useState([]);

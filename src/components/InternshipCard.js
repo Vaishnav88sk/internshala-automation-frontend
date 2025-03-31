@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const backendUrl = process.env.BACKEND_URL || "http://localhost:5000"; ;
+const backendUrl = process.env.BACKEND_URL;
 
 function InternshipCard({ internship }) {
   const [status, setStatus] = useState(null);
