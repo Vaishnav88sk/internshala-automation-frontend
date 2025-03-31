@@ -13,7 +13,7 @@ function App() {
     setLoading(true);
     setError('');
     try {
-      const response = await fetch(`${backendUrl}/api/internships?keywords=${keywords}`);
+      const response = await fetch(`https://internshala-automation-backend-1.onrender.com:5000/api/internships?keywords=${keywords}`);
       console.log(backendUrl);
       console.log(response);
       if (!response.ok) throw new Error('Failed to fetch internships');

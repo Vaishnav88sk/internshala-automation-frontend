@@ -15,7 +15,7 @@ function InternshipCard({ internship }) {
       console.log("Applying for internship with URL:", internship.url);
     
       try {
-        const response = await fetch(`${backendUrl}/api/apply`, {
+        const response = await fetch(`https://internshala-automation-backend-1.onrender.com:5000/api/apply`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ url: internship.url }),
