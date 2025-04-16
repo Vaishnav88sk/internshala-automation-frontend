@@ -102,3 +102,268 @@ body {
     cursor: not-allowed;
   }
   
+  /* styles.css */
+
+.login-page, .signup-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f5f5f5; /* optional */
+  height: 60px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* optional */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logout-btn {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  background-color: #ff5c5c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-page {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-page h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 2rem;
+}
+
+.login-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-page input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.login-page input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+.login-page button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.login-page button:hover {
+  background-color: #0056b3;
+}
+
+.login-page p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-page a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-page a:hover {
+  text-decoration: underline;
+}
+
+/* In your styles.css or within the component using Tailwind */
+
+/* Main search bar styling */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Styling for the input field */
+.search-input {
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  border: 1px solid #d1d5db;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Styling for the search button */
+.search-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #45a049;
+}
+
+/* Styling for the advanced search button */
+.advanced-search-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.advanced-search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Advanced filters styling */
+.advanced-filters {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 0.375rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+  margin-top: 1rem;
+  box-sizing: border-box;
+}
+
+.advanced-filters input,
+.advanced-filters select {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 0.375rem;
+  border: 1px solid #d1d5db;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Styling for individual filter input fields */
+.filter-input {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 0.375rem;
+  border: 1px solid #d1d5db;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.filter-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.advanced-filters select {
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  border: 1px solid #d1d5db;
+  background-color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Option styling for select inputs */
+.advanced-filters select option {
+  padding: 0.75rem;
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+/* Styling for the advanced filters container (focus, hover effects, etc.) */
+.advanced-filters input:focus,
+.advanced-filters select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+/* Mobile responsiveness for the search bar */
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .advanced-filters {
+    padding: 0.5rem;
+  }
+
+  .advanced-search-button {
+    width: 100%;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+}
